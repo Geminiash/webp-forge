@@ -3,3 +3,4 @@ dist/
 tests/tmp/
 *.log
 *.tsbuildinfo
+.webp-forge.json
