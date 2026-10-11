@@ -1,0 +1,59 @@
+{
+  "name": "webp-forge",
+  "version": "0.1.0",
+  "description": "Batch-convert png/jpg/jpeg/avif/gif to WebP — presets, responsive variants, incremental manifest, CI check mode.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Seren",
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "esbuild"
+    ]
+  },
+  "bin": {
+    "webp-forge": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "files": [
+    "dist",
+    "docs",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "webp",
+    "image",
+    "converter",
+    "sharp",
+    "cli",
+    "batch",
+    "optimization",
+    "responsive"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geminiash/webp-forge.git"
+  },
+  "dependencies": {
+    "commander": "^14.0.0",
+    "sharp": "^0.34.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}
